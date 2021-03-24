@@ -1,0 +1,144 @@
+<!DOCTYPE html/>
+<html>
+	<head>
+		<title>My First HTML</title> <!--The title of the webpage-->
+		<style>
+		</style> <!--This is where you style the appearance of your HTML-->
+		<meta name="Author" content="Samer Khamisi" />
+		<meta name="File" content="Lab1.HTML.Khamisi.html" />
+		<meta name="Date" content="February 22, 2021" />
+		<script> <!--This is where your JavaScript code goes-->
+		</script>
+			<!--JavaScript goes here-->
+	</head>
+	<body> <!--Only content that is displayed on the website-->
+		<a id='top' /> <!-- This is a target anchor -->
+		<a href='#bottom'>go to bottom</a> <!-- This is a source anchor -->
+		<h1>ISTA 322 Lab 1 (HTML)</h1> <!--BIG HEADER-->
+		<h2>Part 1, HTML elements</h2> <!--Big Header-->
+		<h3>Headers</h3> <!--Medium Header-->
+		<h4>George Washington</h4> <!--Medium Header-->
+		<p>
+		
+		"A primary object should be the education of our youth in the science of government. In a republic, 
+		what species of knowledge can be equally important? And what duty more pressing than communicating it to 
+		those who are to be the future guardians of the liberties of the country?”
+
+		</p>
+		<h4>Abraham Lincoln</h4>
+		<p>
+		
+		“I can see how it might be possible for a man to look down upon the earth and be an atheist, but I cannot 
+		conceive how a man could look up into the heavens and say there is no God.”
+		
+		</p>
+		<h2> Hyper Refs</h2>
+		
+		<a href='http://github.com' target = 'new' >Go to Github</a><br /> <!-- <br/> Forced line break -->
+		<a href='http://Amazon.com' target = 'new' >Go to Amazon</a><br /> <!-- target = new, opens in page in new tab -->
+		<a href='http://nexusmods.com'target = 'new' >Go to Nexus Mods</a><br />
+		
+		<h2>Generic Elements: &lt;div&gt;, &lt;span&gt;</h2>
+		
+		<div>This is a generic block element.</div>
+		<div>This is a generic block element.</div>
+		<div>This is a generic block element.</div>
+		
+		<div>
+		<span style='font-variant: small-caps;' >This is a generic inline element.</span>
+		<span style='background-color: #aaffaa;' >This is a generic inline element.</span>
+		<span style='font-family: sans-serif;' >This is a generic inline element.</span>
+		</div>
+		
+		
+		<h2>HTML Tables</h2>
+		
+		<center>
+		<table rules='all' style='border:2px solid black;'> <!-- Puts a solid black border around the table -->
+			<tr>
+				<th colspan='3' style='color: white; background-color: black;'>Personnel</th> <!-- Gives the header a black background -->
+			</tr>
+			<tr> <!-- First row -->
+				<th>Name</th> <!-- Allows us to input a header for our table -->
+				<th>Rank</th>
+				<th>ID</th>
+			</tr>
+			<tr> <!-- Second row -->
+				<td>Samer Khamisi</td> <!--allows you to show data -->
+				<td>Senior Airman</td>
+				<td>123456789</td>
+			</tr>
+			<tr> <!-- Third row -->
+				<td>Will Mace</td> <!--allows you to show data -->
+				<td>Captain</td>
+				<td>646597878</td>
+			</tr>
+			<tr> <!-- Fourth row -->
+				<td>Patrick Mason</td>
+				<td>Sergeant Major</td>
+				<td>235841234</td>
+			</tr>
+		</table>
+		</center>
+		
+		<h2>HTML FORM</h2>
+		
+			<form method='GET'>
+				<input type='hidden' name='Joe' id='Joe' value='42' />
+				What is your name? <input type='text' name='Samer' id='Samer' /><br />
+				What is your password? <input type='password' name='Khamisi' id='Khamisi' /><br />
+				Color input: <input type='color' name='Dave' id='Dave' /> <br />
+				Range input: <input type='range' name='Jim' id='Jim' value='550'
+					min='0' max='1000' step='5' onInput='Frank.value = Jim.value'>	
+				<output style='border: 1px red solid;' id='Frank' name='Frank' ></output> <br />
+				
+				<h3>Pizza</h3>
+				Pepperoni: <input type='checkbox' name='pizza' id='pizza' value='Pepperoni' />
+				Bellpepper: <input type='checkbox' name='pizza' id='pizza' value='Bellpepper' />
+				Bacon: <input type='checkbox' name='pizza' id='pizza' value='Bacon' />
+				Ham: <input type='checkbox' name='pizza' id='pizza' value='Ham' />
+				Mushroom: <input type='checkbox' name='pizza' id='pizza' value='Mushroom' />
+				Pineapple: <input type='checkbox' name='pizza' id='pizza' value='Pineapple' />
+				<hr />
+				<select name='pizza2' id='pizza2' size='3' multiple='multiple'>
+					<option value='Chicken'>Chicken</option>
+					<option value='Onion'>Onion</option>
+					<option value='Prosciutto'>Prosciutto</option>
+					<option value='Sausage'>Sausage</option>
+					<option value='Blackolives'>Blackolives</option>
+				</select>
+				
+				<h3>Sex</h3>
+				Male: <input type='radio' name='sex' id='sex' value='male' checked='checked' />
+				Female: <input type='radio' name='sex' id='sex' value='Female' />
+				Don't Know: <input type='radio' name='sex' id='sex' value='DontKnow' />
+				<h3>State of Birth</h3>
+				<select name='sob' id='sob'>
+					<option value=''>Where were you born?</option>
+					<option value='CO'>Colorado</option>
+					<option value='SC'>South Carolina</option>
+					<option value='TX'>Texas</option>
+					<option value='PA'>Pennsylvania</option>
+					<option value='OR'>Oregon</option>
+					<option value='IL'>Illinois</option>
+				</select>
+				
+			<br />
+			<textarea name='ta' id='ta' rows=5 cols=50/>Type something here.
+			</textarea>
+		
+		<hr/> <!-- Puts a line on the page -->
+		
+			<input type='submit' name='submit' id='submit' value='submit' />
+			<input type='reset' value='Clear Form' />
+			
+		<hr/>
+
+			</form>
+		
+		<!-- h5>Rarely used</h5 --> <!--Small Header-->
+		<!-- h6>Rarely used</h6 --> <!--Tiny Header-->
+		<a href='#top'>Got to top</a> <!-- This is also a source anchor -->
+		<a id='bottom' /> <!-- This is also a target anchor -->
+	</body>
+</html>
